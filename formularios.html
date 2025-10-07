@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Formulários no HTML</h1>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <section>
+                <label for="input_texto">Texto:</label>
+                <input type="text" id="input_texto" minlength="8" required>
+            </section>
+            <section>
+                <label for="input_cep">CEP:</label>
+                <input type="text" name="input_cep" id="input_cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000">
+            </section>
+            <section>
+                <label for="input_email">Email:</label>
+                <input type="email" id="input_email">
+            </section>
+            <section>
+                <label for="input_senha">Senha:</label>
+                <input type="password" id="input_seha">
+            </section>
+            <section>
+                <label for="input_senha">Data:</label>
+                <input type="date" id="input_seha">
+            </section>
+            <section>
+                <label for="input_arquivo">Arquivo:</label>
+                <input type="file" name="input_arquivo" id="input_arquivo">
+            </section>
+            <section>
+                <label for="textarea">Área de Texto:</label>
+                <textarea name="textarea" id="textarea" rows="5" cols="26">
+                </textarea>
+            </section>
+            <section>
+                <p>Radio:</p>
+                <input type="radio" name="radio1" id="radio1">
+                <label for="radio1">Radio 1</label>
+                <br>
+                <input type="radio" name="radio2" id="radio2">
+                <label for="radio2">Radio 2</label>
+            </section>
+            <section>
+                <p>Checkbox:</p>
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Checkbox 1</label>
+                <br>
+                <input type="checkbox" name="checkbox2" id="checkbox2">
+                <label for="checkbox2">Checkbox 2</label>
+            </section>
+            <section>
+                <label for="select">Select:</label>
+                <select name="select" id="select">
+                    <option value="">Selecione...</option>
+                    <option value="option1">Opção 1</option>
+                    <option value="option2">Opção 2</option>
+                </select>
+            </section>
+            <section>
+                <button type="submit">Botão submit</button>
+                <button type="reset">Botão reset</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
