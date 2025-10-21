@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style_hobby.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Meu Hobby</title>
+
+    <style>
+        table {
+            border: 2px solid #000000;
+            border-spacing: 5px;
+            margin: 40px;
+            width: 300px
+        }
+
+        table th {
+            border: 1px solid rgb(0, 0, 0);
+            background-color: #f9e4ba
+        }
+
+        table td {
+            border: 1px solid rgb(0, 0, 0);
+            background-color: #f6efde
+        }
+
+        svg {
+            stroke:rgb(222, 196, 0);
+            stroke-width:2
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>🤾‍♂️=-. Vôlei .-=🏐</h1>
         <nav>
-            <a href="index.html" style="color:red">Ir para a página do São Paulo</a>
-            <a href="minha_receita.html" style="color:#885a04">Ir para a página da Minha Receita</a>
-            <a href="formularios.html" style="color:rgb(9, 104, 0)">Ir para a página do Formulário</a>
+            <a href="index.html" class="nav_spfc">Ir para a página do São Paulo</a>
+            <a href="minha_receita.html" class="nav_receita">Ir para a página da Minha Receita</a>
+            <a href="formularios.html" class="nav_formularios">Ir para a página do Formulário</a>
         </nav>
         <h3>Este site vai falar sobre o meu hobby favorito</h2>
         <h3>Por: Vinícius Assunção</h3>
@@ -69,7 +93,7 @@
 
     <footer>
         <svg height="10" width="100%">
-            <line x1="0" y1="5" x2="100%" y2="5" style="stroke:rgb(222, 196, 0);stroke-width:2" />
+            <line x1="0" y1="5" x2="100%" y2="5"/>
         </svg>
         <h2>Informações para contato:</h2>
         <p>Telefone: +55 11 12345-9876 <br>

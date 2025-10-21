@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style_index.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Meu site</title>
+
+    <style>
+        body {
+            background-image: url("src/imagens/sao_paulo_gif.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 60px;
+        }
+
+        h2, p {
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>São Paulo!!</h1>
         <nav>
             <p>
-                <a href="meu_hobby.html" style="color:orange">Ir para a página do Meu Hobby</a>
-                <a href="minha_receita.html" style="color:rgb(255, 186, 58)">Ir para a página da Minha Receita</a>
-                <a href="formularios.html" style="color:rgb(9, 104, 0)">Ir para a página do Formulário</a>
+                <a href="meu_hobby.html" class="nav_hobby">Ir para a página do Meu Hobby</a>
+                <a href="minha_receita.html" class="nav_receita">Ir para a página da Minha Receita</a>
+                <a href="formularios.html" class="nav_formularios">Ir para a página do Formulário</a>
             </p>
             <p>
                 <a href="#rodape">Ir para o Rodapé</a>
@@ -31,11 +48,13 @@
             <video src="src/videos/futebol_video.mp4" width="460" controls>Seu navegador não suporta a tag do vídeo</video>
             <iframe width="460" height="258" src="https://www.youtube.com/embed/SXWcNL-7OtY?si=QbA3XEawnJD0eWyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+        <aside>
+            <p>
+                Acesse o site oficial do <a href="https://www.saopaulofc.net" target="_blank" style="color:rgb(255, 0, 0)">São</a><a href="https://www.saopaulofc.net" target="_blank" style="color:rgb(255, 255, 255)"> Pa</a><a href="https://www.saopaulofc.net" target="_blank" style="color:rgb(30, 30, 30)">ulo</a>
+            </p>
+        </aside>
     </main>
     <footer id="rodape">
-        <p>
-        Acesse o site oficial do <a href="https://www.saopaulofc.net" target="_blank" style="color:rgb(255, 0, 0)">São</a><a href="https://www.saopaulofc.net" target="_blank" style="color:rgb(255, 255, 255)"> Pa</a><a href="https://www.saopaulofc.net" target="_blank" style="color:rgb(30, 30, 30)">ulo</a>
-        </p>
         <svg height="10" width="100%">
             <line x1="0" y1="5" x2="100%" y2="5" style="stroke:rgb(222, 0, 0);stroke-width:2" />
         </svg>

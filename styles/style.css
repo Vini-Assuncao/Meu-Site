@@ -1,0 +1,19 @@
+.nav_spfc {
+    color: red;
+}
+
+.nav_hobby {
+    color: orange
+}
+
+.nav_receita {
+    color:#885a04;
+}
+
+.nav_formularios {
+    color:rgb(9, 104, 0);
+}
+
+* {
+    font-family: system-ui,'Open Sans';
+}

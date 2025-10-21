@@ -4,16 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Minha receita</title>
+
+    <style>
+        #delicadamente {
+            color: rgb(34, 120, 167)
+        }
+        #temperatura {
+            color: rgb(163, 31, 31)
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>🥕 Bolo de Cenoura Simples 🥮</h1>
         <nav>
-            <a href="meu_hobby.html" style="color:orange">Ir para a página do Meu Hobby</a>
-            <a href="index.html" style="color:red">Ir para a página do São Paulo</a>
-            <a href="formularios.html" style="color:rgb(9, 104, 0)">Ir para a página do Formulário</a>
+            <a href="meu_hobby.html" class="nav_hobby">Ir para a página do Meu Hobby</a>
+            <a href="index.html" class="nav_spfc">Ir para a página do São Paulo</a>
+            <a href="formularios.html" class="nav_formularios">Ir para a página do Formulário</a>
         </nav>
     </header>
     <main>
@@ -34,8 +44,8 @@
                 <h2>Modo de Preparo</h2>
                 <p>Bata no liquidificador as cenouras, os ovos e o óleo.</p>
                 <p>Despeje a mistura em uma tigela e adicione o açúcar e a farinha. Misture bem.</p>
-                <p>Por último, adicione o fermento e mexa <span style="color: rgb(34, 120, 167)">delicadamente</span>.</p>
-                <p>Asse em forno pré-aquecido a <span style="color:rgb(163, 31, 31)">180°C</span> por aproximadamente 40 minutos.</p>
+                <p>Por último, adicione o fermento e mexa <span id="delicadamente">delicadamente</span>.</p>
+                <p>Asse em forno pré-aquecido a <span id="temperatura">180°C</span> por aproximadamente 40 minutos.</p>
             </section>
 
             <footer>
