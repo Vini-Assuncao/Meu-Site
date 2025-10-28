@@ -1,0 +1,53 @@
+body {
+    background-color: #1d1d39;
+    text-align: center;
+}
+
+header {
+    color: #0772fc;
+}
+
+h1 {
+    font-family: "Bungee Outline", Arial, Helvetica;
+    font-size: 2em;
+}
+
+.subtitulo {
+    background-color: #161651;
+    border: 1px solid;
+    font-family: "VCR OSD Mono", Arial, Helvetica;
+}
+
+section > p {
+    color: aliceblue;
+}
+
+main {
+    color: aliceblue;
+}
+
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: #11a900;
+}
+a:hover {
+    color: #7b62fc;
+    text-decoration: underline;
+}
+a:active {
+    color: #cbd600;
+}
+
+dt {
+    font-weight: 800;
+}
+
+img {
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.721);
+    max-width: 500px;
+}
