@@ -1,20 +1,6 @@
-body {
-    background-color: #1d1d39;
-    text-align: center;
-}
-
-header {
-    color: #0772fc;
-}
-
-h1 {
-    font-family: "Bungee Outline", Arial, Helvetica;
-    font-size: 2em;
-}
-
 .subtitulo {
     background-color: #161651;
-    border: 1px solid;
+    border: 1px solid #0772fc;
     font-family: "VCR OSD Mono", Arial, Helvetica;
 }
 
@@ -24,8 +10,8 @@ section > p {
 
 main {
     color: aliceblue;
+    margin: 30px;
 }
-
 
 a {
     text-decoration: none;
@@ -50,4 +36,5 @@ img {
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.721);
     max-width: 500px;
+    margin: 30px;
 }

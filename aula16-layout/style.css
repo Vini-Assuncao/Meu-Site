@@ -1,0 +1,46 @@
+.container {
+    border:dashed 2px #0565e28f;
+    margin: 10px;
+}
+
+.caixa {
+    width: 200px;
+    height: 70px;
+    padding: 10px;
+    border: 3px solid #0772fc;
+    margin: 10px;
+}
+
+/* Dando cores para identificar */
+#caixa1 {
+    background-color: #b07a05;
+}
+
+#caixa2 {
+    background-color: #068338;
+    z-index: 5;
+    position: relative;
+    top: 30px; /* Desce 30px */
+    left: 100px; /* Vai 50px para a direita */
+/* O espaço original da Caixa 2
+(verde) ainda está lá,
+mas a caixa 3 (azul) vai se
+sobrepor a ela! */
+}
+
+#caixa3 {
+    background-color: #1469a1;
+    position: absolute;
+    top: 185px; /* 5px do topo do .container */
+    right: 10px; /* 5px da direita do .container */
+    width: 120px; /* Reduzimos para caber */
+    z-index: 1;
+}
+#caixa4 {
+    background-color: #722391;
+    position: fixed;
+    bottom: 10px; /* 10px do final da janela */
+    right: 10px; /* 10px da direita da janela */
+    width: 250px;
+    /* Esta caixa vai ficar no canto da tela mesmo se você rolar a página */
+}

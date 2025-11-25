@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: #ddd;
+    background-color: #1d1d39;
+}
+
+h1 {
+    font-family: "Bungee Outline", Arial, Helvetica;
+    font-size: 2em;
+    color: #ddd;
+    background-color: #0565e2;
+}
+
+#ultima_aula {
+    background-color: #0772fc;
+    color: antiquewhite;
+    position: fixed;
+    left: 30px;
+    bottom: 10px;
+    width: 150px;
+    border-radius: 7px;
+}
+
+#a_ultima_aula {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+#proxima_aula {
+    background-color: #0772fc;
+    color: antiquewhite;
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    width: 150px;
+    border-radius:7px;
+}
+
+#a_proxima_aula {
+    text-decoration: none;
+    color: antiquewhite;
+}

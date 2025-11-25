@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="src/styles/style.css">
     <title>Meu site</title>
 
     <style>
@@ -16,27 +16,38 @@
             background-size: cover;
         }
 
-        h1 {
-            color: #ffffff;
-            font-size: 60px;
+        main, footer {
+            padding: 10px;
+            background-color: #690101bf;
+            border-radius: 10px;
         }
 
         h2, p {
             color: #ffffff;
         }
+
+        #link_rodape {
+            color: #000000;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>São Paulo!!</h1>
+        <h1>🟥⭐São Paulo⭐⬛</h1>
         <nav>
+            <ul>
+                <li>
+                    <a href="meu_hobby.html" class="nav_hobby">Meu Hobby</a>
+                </li>
+                <li>
+                    <a href="minha_receita.html" class="nav_receita">Minha Receita</a>
+                </li>
+                <li>
+                    <a href="formularios.html" class="nav_formularios">Formulário</a>
+                </li>
+            </ul>
             <p>
-                <a href="meu_hobby.html" class="nav_hobby">Ir para a página do Meu Hobby</a>
-                <a href="minha_receita.html" class="nav_receita">Ir para a página da Minha Receita</a>
-                <a href="formularios.html" class="nav_formularios">Ir para a página do Formulário</a>
-            </p>
-            <p>
-                <a href="#rodape">Ir para o Rodapé</a>
+                <a href="#rodape" id="link_rodape">Ir para o Rodapé</a>
             </p>
         </nav>
     </header>

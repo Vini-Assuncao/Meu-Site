@@ -1,0 +1,58 @@
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#caixa1 {
+    display: border-box;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    background-color: #161651;
+    border: 1px solid #0772fc;
+    display: inline-block;
+}
+
+#caixa2 {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin: 15px;
+    background-color: #161651;
+    border: 1px solid #0772fc;
+    display: inline-block;
+}
+
+.menu-principal {
+    list-style: none;
+    background-color: #0772fc;
+}
+
+.menu-principal li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-principal li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.menu-principal li a:hover {
+    background-color: #0a4fa9;
+}
+
+.menu-principal ul ul {
+    display: none;
+}
+
+.menu-principal li:hover > ul {
+    display: block;
+    background-color: #0762da;
+    position: absolute;
+}

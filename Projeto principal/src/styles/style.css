@@ -1,0 +1,56 @@
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: black;
+    background-color: rgb(225, 225, 225);
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    width: 33%;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
+.nav_spfc {
+    background-color: red;
+}
+
+.nav_hobby {
+    background-color: orange;
+}
+
+.nav_receita {
+    background-color: #ff5900;
+}
+
+.nav_formularios {
+    background-color: #066b0e;
+}
+
+main {
+    margin:10px
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
