@@ -24,20 +24,33 @@
         </nav>
     </header>
 
-    <main class="container">
-        <h2>Demonstração do Box Model</h2>
-        <div id="caixa1">
-            Caixa 1 (com border-box)
-        </div>
-        <div id="caixa2">
-            Caixa 2 (com border-box)
-        </div>
-        <section id="ultima_aula">
-            <a href="..\aula14-formatacao\index.html" id="a_ultima_aula">Última aula</a>
-        </section>
-        <section id="proxima_aula">
-            <a href="..\aula16-layout\index.html" id="a_proxima_aula">Próxima aula</a>
-        </section>
+    <main>
+        <article class="container">
+            <h2>Demonstração das camadas</h2>
+            <div id="camadas">
+                Content (Conteúdo) <br>
+                Padding (Espaçamento interno) <br>
+                Border (Borda) <br>
+                Margin (Espaçamento externo)
+            </div>
+        </article>
+        <article class="container">
+            <h2>Demonstração do Box Model</h2>
+            <div id="caixa1">
+                Caixa 1 (sem border-box)
+            </div>
+            <div id="caixa2">
+                Caixa 2 (com border-box)
+            </div>
+        </article>
+        <article>
+            <section id="ultima_aula">
+                <a href="..\aula14-formatacao\index.html" id="a_ultima_aula">Última aula</a>
+            </section>
+            <section id="proxima_aula">
+                <a href="..\aula16-layout\index.html" id="a_proxima_aula">Próxima aula</a>
+            </section>
+        </article>
     </main>
 </body>
 </html>
