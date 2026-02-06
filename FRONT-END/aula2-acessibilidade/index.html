@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>TechFood - Cardápio Digital</title>
+</head>
+<body>
+    <header class="header">
+        <p class="logo">TechFood</p>
+        <button aria-label="Pesquisar" class="search-icon">🔍</button> <button aria-label="Ver carrinho" class="cart-icon">🛒</button> 
+    </header>
+
+    <main>
+        <section class="banner-hero">
+            <h1>Sabor & Saber</h1>
+            <p>A melhor gastronomia tecnológica da região.</p>
+        </section>
+        <section class="menu-container">
+            <article class="abas-lista">
+                <input type="radio" name="categoria" id="massa" checked>
+                <label for="massa">Massas</label>
+
+                <input type="radio" name="categoria" id="bebida">
+                <label for="bebida">Bebidas</label>
+
+                <input type="radio" name="categoria" id="doce">
+                <label for="doce">Doces</label>
+            </article>
+
+            <article class="aba-tela" id="tela-massas">
+                <section class="grid-produtos">
+                    <article class="card">
+                        <img src="src/images/lasanha.jpg" alt="Lasanha em um prato">
+                        <h3>Lasanha Tradicional</h3>
+                        <p>Massa artesanal ao molho bolonhesa com 4 queijos.</p>
+                        <span class="preco">R$ 45,90</span>
+                        <button class="btn-pedir" onclick="alert('Adicionado')">Pedir</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="src/images/ravioli.jpg" alt="Ravioli de Espinafre em um prato">
+                        <h3>Ravioli de Espinafre</h3>
+                        <p>Recheado com ricota fresca e nozes picadas.</p>
+                        <span class="preco">R$ 39,00</span>
+                        <button class="btn-pedir">Pedir</button>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Siga-nos: <a aria-label="Facebook" href="#">FB</a> <a aria-label="Instagram" href="#">IG</a></p>
+    </footer>
+</body>
+</html>
