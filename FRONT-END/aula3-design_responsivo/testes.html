@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula3 - Design responsivo</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        h1 {
+            color: black;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: black;
+            }
+            h1 {
+                color: antiquewhite;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-color: rgb(18, 18, 70);
+            }
+            h1 {
+                color: antiquewhite;
+            }
+        }
+
+        @media (max-width: 500px), (max-height: 600px) {
+            body {
+                background-color: rgb(255, 220, 220);
+            }   
+            h1 {
+                color: black;
+            }
+        }
+
+        @media not screen {
+            h1 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Media Query</h1>
+</body>
+</html>
