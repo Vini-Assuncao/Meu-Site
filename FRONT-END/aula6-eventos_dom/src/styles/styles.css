@@ -7,13 +7,13 @@
 
 /* CABEÇALHO */
 
-#topo_loja {
+#topo-loja {
     background-color:#de7b03;
     color: antiquewhite;
     text-align: center;
 }
 
-#bt_menu, #label_menu {
+#bt-menu, #label-menu {
     display: none;
 }
 
@@ -41,13 +41,13 @@
 
 /* SEÇÕES */
 
-.titulo_secao {
+.titulo-secao {
     color: #de7b03;
     margin-bottom: 17px;
     text-align: center;
 }
 
-#secao_massas, #secao_sobremesas {
+#secao-massas, #secao-sobremesas {
     padding: 17px 0px 20px;
 }
 
@@ -57,7 +57,7 @@ main {
     padding: 20px;
 }
 
-.vitrine_grid {
+.vitrine-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -85,7 +85,7 @@ main {
     margin: 10px 0;
 }
 
-.bt_pedido {
+.bt-pedido {
     background-color: #468409;
     border: 3px solid #37630a;
     width: 70%;
@@ -95,7 +95,7 @@ main {
     cursor: pointer;
 }
 
-.bt_pedido:hover {
+.bt-pedido:hover {
     background-color: #559f0a;
 }
 
@@ -111,7 +111,7 @@ footer {
 /* Media query */
 
 @media screen {
-    #topo_loja h1 {
+    #topo-loja h1 {
         letter-spacing: 2px;
     }
 }
@@ -125,7 +125,7 @@ footer {
 /* Telas entre 601px e 1024px (TABLET)*/
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .vitrine_grid {
+    .vitrine-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -133,7 +133,7 @@ footer {
 /* Telas até 601px (CELULAR)*/
 
 @media screen and (max-width: 601px), (orientation: portrait) {
-    #label_menu {
+    #label-menu {
         display: block;
         font-size: 2rem;
         color: #461901;
@@ -145,12 +145,12 @@ footer {
         display: none;
     }
 
-    #bt_menu:checked ~ #menu ul {
+    #bt-menu:checked ~ #menu ul {
         display: block;
         padding: 10px 0px;
     }
 
-    .vitrine_grid {
+    .vitrine-grid {
         grid-template-columns: 1fr;
     }
 
@@ -166,7 +166,7 @@ footer {
 
 
 @media not screen {
-    #menu, .bt_pedido, #label_menu, #bt_menu {
+    #menu, .bt-pedido, #label-menu, #bt-menu {
         display: none;
     }
 }

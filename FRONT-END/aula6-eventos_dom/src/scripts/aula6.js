@@ -1,4 +1,4 @@
-const btn = document.querySelectorAll(".bt_pedido");
+const btn = document.querySelectorAll(".bt-pedido");
 const inputQtdPrato = document.querySelector("#qtd-lasanha")
 const textoPreco = document.querySelector("#preco-lasanha")
 
@@ -19,3 +19,46 @@ btn.forEach(function (btn) {
   })
 })
 
+// ADICIONANDO OUVINTE COMPARTILHADO (MODELO PAI E FILHO)
+
+const massas = document.querySelector("#secao-massas")
+
+massas.addEventListener('click', (event) => {
+  const clicado = event.target
+
+  if (clicado.classList.contains('bt-pedido')) {
+    console.log("Você clicou em um botão de pedido de MASSA!")
+  }
+})
+
+// EVENTO DE CLIQUE PARA TODOS OS BOTÕES
+
+const botoesPedido = document.querySelectorAll(".bt-pedido")
+console.log()
+
+botoesPedido.forEach((botao) => {
+  botao.addEventListener('click', (event) => {
+    event.preventDefault() // EVITA QUALQUER COMPORTAMENTO PADRÃO
+
+    botao.textContent = "✓ Pedido enviado"
+    botao.style.backgroundColor = "#274706"
+
+    botao.disable = true
+  })
+})
+
+// AÇÕES INTERATIVIDADE CARDS
+
+const cards = document.querySelectorAll(".card")
+
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "translateY(-5px)"
+    card.style.boxShadow = "0px 0px 5px 5px #8b4e03"
+  })
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "translateY(0)"
+    card.style.boxShadow = "0px 0px 5px 3px #c56e04"
+  })
+})
