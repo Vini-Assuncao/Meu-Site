@@ -81,41 +81,6 @@ function atualizarPrecoCard(box) {
   spanPreco.style.color = total > 150 ? "#c0392b" : "#e67e22"
 }
 
-function adicionarItemAoResumo(nome, qtd, preco, cardOrigem) {
-  const secaoResumo = document.querySelector("#secao-resumo")
-  const listaResumo = document.querySelector("#lista-resumo")
-
-  if (!secaoResumo || !listaResumo) return
-
-  secaoResumo.style.display = "block"
-
-  const itemLi = document.createElement("li")
-  itemLi.classList.add("item-resumo")
-
-  const textoSpan = document.createElement("span")
-  textoSpan.textContent = `${qtd}x ${nome} - ${preco}`
-
-  const btnRemover = document.createElement("button")
-  btnRemover.classList.add("btn-remover")
-  btnRemover.textContent = "❌"
-
-  btnRemover.addEventListener("click", () => {
-    itemLi.remove()
-
-    const badge = cardOrigem.querySelector(".badge-adicionado")
-
-    if (badge) badge.remove()
-
-    if (listaResumo.children.length == 0) {
-      secaoResumo.style.display = "none"
-    }
-  })
-
-  itemLi.appendChild(textoSpan)
-  itemLi.appendChild(btnRemover)
-  listaResumo.appendChild(itemLi)
-}
-
 const btnLimpar = document.querySelector("#btn-limpar")
 
 if (btnLimpar) {
