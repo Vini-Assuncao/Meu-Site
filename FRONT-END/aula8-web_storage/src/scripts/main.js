@@ -77,8 +77,8 @@ function inicializarVitrine() {
 
       const card = clicado.parentElement;
       const nomePrato = card.querySelector("h3").textContent;
-      const quantidade = card.querySelector(".qtd-valor").textContent;
-      const precoExibido = card.querySelector(".preco").textContent;
+      const quantidade = Number(card.querySelector(".qtd-valor").textContent);
+      const precoExibido = parseFloat(card.querySelector(".preco").getAttribute("data-preco"));
 
       clicado.textContent = "✔ Adicionado";
       clicado.style.backgroundColor = "#27ae60";
@@ -142,7 +142,7 @@ function salvarPedido(pedido){
 
 function atualizarContadorPedidos(){
   const lista = JSON.parse(localStorage.getItem("techfood_pedidos") || "[]")
-  const total = lista.reduce(function(acc, p) {return acc + Number(p.qtd)}, 0)
+  const total = lista.reduce(function(acc, p) {return acc + p.qtd}, 0)
 
   const linkMenu = document.querySelector("#menu a[href='pedidos.html']")
 
